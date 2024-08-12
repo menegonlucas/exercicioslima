@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Usuários do Sistema Interno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Manutenção de Usuários do Sistema Interno</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" placeholder="Digite o login" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite a senha" required>
+            </div>
+            <div class="input-group">
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="ativo">Ativo</option>
+                    <option value="inativo">Inativo</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="role">Tipo de Usuário:</label>
+                <select id="role" name="role">
+                    <option value="tecnico">Técnico</option>
+                    <option value="professor">Professor</option>
+                    <option value="aluno">Aluno</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="observations">Observações:</label>
+                <textarea id="observations" name="observations" placeholder="Digite suas observações"></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit">Cadastrar</button>
+                <button type="button">Excluir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

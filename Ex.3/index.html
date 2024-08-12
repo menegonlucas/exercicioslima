@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Dados Pessoais e Profissionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Dados Pessoais e Profissionais</h2>
+        <form action="#" method="post">
+            <!-- Dados Pessoais -->
+            <div class="section">
+                <h3>Dados Pessoais</h3>
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+                </div>
+                <div class="input-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+                </div>
+                <div class="input-group">
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" placeholder="Digite seu estado" required>
+                </div>
+            </div>
+
+            <!-- Dados Profissionais -->
+            <div class="section">
+                <h3>Dados Profissionais</h3>
+                <div class="input-group">
+                    <label for="cargo">Cargo:</label>
+                    <select id="cargo" name="cargo">
+                        <option value="gerencia">Gerência</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="recepcao">Recepção</option>
+                        <option value="administrativo">Administrativo</option>
+                        <option value="juridico">Jurídico</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="area-interesse">Área de Interesse:</label>
+                    <input type="text" id="area-interesse" name="area-interesse" placeholder="Digite a área de interesse">
+                </div>
+            </div>
+
+            <!-- Botões -->
+            <div class="button-group">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
